@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acer Indonesia - Homepage</title>
+    <meta name="description" content="Acer Indonesia - Laptop, Desktop, Monitor, dan Aksesori">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-900">
+
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-black text-white">
+        <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+            <!-- Logo -->
+    <div class="flex-1 w-full box-border max-w-full px-1 mb-1">
+        <div class="align-items-center h-full d-flex box-border">
+            <div class="box-border d-block gap-x-6 ">
+                <a href="#" class="text-decoration-none font-normal align-items-center d-flex text-green-800 cursor-pointer transition-all box-border">
+                    <img src="https://images.acer.com/is/content/acer/acer-4" alt="logo-acer" class="overflow-clip">
+                </a>
+            </div>
+        </div>
+    </div>
+            
+            <!-- Navigation -->
+            <nav class="hidden md:flex items-center gap-6 text-sm">
+                <a href="index.html" class="text-lime-400">Beranda</a>
+                <a href="emobility.html" class="hover:text-lime-400">eMobility</a>
+                <a href="about-id.html" class="hover:text-lime-400">Acer ID</a>
+                <a href="support.html" class="hover:text-lime-400 font-medium">Dukungan</a>
+            </nav>
+
+            <!-- Mobile Menu -->
+            <div class="md:hidden text-sm">
+                <span>Menu ☰</span>
+            </div>
+        </div>
+    </header>
+
+
+    
+  <style>
+  /* ===== SLIDE CORE ===== */
+  .slide {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity .4s ease;
+  }
+
+  .slide.active {
+    opacity: 1;
+    z-index: 1;
+  }
+
+  .slide:target {
+    opacity: 1;
+    z-index: 2;
+  }
+
+  /* ===== BLUR BACKGROUND ===== */
+  .blur-bg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    overflow: hidden;
+  }
+
+  .blur-bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(20px);
+    transform: scale(1.1);
+    opacity: 0.35;
+  }
+
+  /* ===== MAIN IMAGE ===== */
+  .main-img {
+    position: relative;
+    z-index: 1;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+
+  /* ===== NAV BUTTON ===== */
+  .nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    font-weight: bold;
+    background: rgba(0,0,0,.6);
+    color: white;
+    padding: .25rem .6rem;
+    border-radius: .375rem;
+    text-decoration: none;
+    z-index: 10;
+    user-select: none;
+  }
+
+  .nav.left { left: .75rem; }
+  .nav.right { right: .75rem; }
+</style>
+
+
+
+
+
+
+   <main
+  id="carousel"
+  class="relative w-screen max-w-none
+         h-[220px] sm:h-[300px] md:h-[400px] lg:h-[500px]
+         bg-black border-4 border-gray-800 mx-auto overflow-hidden"
+>
+
+  <!-- SLIDE 1 -->
+  <div id="slide1" class="slide active">
+    <!-- BLUR BACKGROUND -->
+    <div class="blur-bg">
+      <img src="https://th.bing.com/th/id/OIP.D-GVXahYRrq4oQSO_ROfWgHaD4" />
+    </div>
+
+    <!-- MAIN IMAGE -->
+    <img
+      class="main-img"
+      src="https://th.bing.com/th/id/OIP.D-GVXahYRrq4oQSO_ROfWgHaD4"
+      alt="Slide 1"
+    />
+
+    <a href="#slide4" class="nav left">‹</a>
+    <a href="#slide2" class="nav right">›</a>
+  </div>
+
+  <!-- SLIDE 2 -->
+  <div id="slide2" class="slide">
+    <div class="blur-bg">
+      <img src="https://gamerbraves.sgp1.cdn.digitaloceanspaces.com/2023/04/AcerLaunch-10.jpg" />
+    </div>
+
+    <img
+      class="main-img"
+      src="https://gamerbraves.sgp1.cdn.digitaloceanspaces.com/2023/04/AcerLaunch-10.jpg"
+      alt="Slide 2"
+    />
+
+    <a href="#slide1" class="nav left">‹</a>
+    <a href="#slide3" class="nav right">›</a>
+  </div>
+
+  <!-- SLIDE 3 -->
+  <div id="slide3" class="slide">
+    <div class="blur-bg">
+      <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/b/buutan0115/20250906/20250906094453.png" />
+    </div>
+
+    <img
+      class="main-img"
+      src="https://cdn-ak.f.st-hatena.com/images/fotolife/b/buutan0115/20250906/20250906094453.png"
+      alt="Slide 3"
+    />
+
+    <a href="#slide2" class="nav left">‹</a>
+    <a href="#slide4" class="nav right">›</a>
+  </div>
+
+  <!-- SLIDE 4 -->
+  <div id="slide4" class="slide">
+    <div class="blur-bg">
+      <img src="https://us.v-cdn.net/6029997/uploads/7I2EBTMGN2FS/ces-acer-swift-14-seahorse-rth-1920x1200.png" />
+    </div>
+
+    <img
+      class="main-img"
+      src="https://us.v-cdn.net/6029997/uploads/7I2EBTMGN2FS/ces-acer-swift-14-seahorse-rth-1920x1200.png"
+      alt="Slide 4"
+    />
+
+    <a href="#slide3" class="nav left">‹</a>
+    <a href="#slide1" class="nav right">›</a>
+  </div>
+
+</main>
+
+
+
+
+
+
+    <!-- Kategori Produk -->
+<section class="py-12 bg-gray-50">
+  <div class="max-w-7xl mx-auto px-4">
+    <h2 class="text-2xl font-bold text-center mb-10">Kategori Produk</h2>
+
+    <div class="grid grid-cols-2 md:grid-cols-5 gap-8 text-center">
+      
+      <!-- Item -->
+      <div class="hover:scale-105 transition-transform duration-300">
+        <div class="w-28 h-28 md:w-32 md:h-32 mx-auto mb-4">
+          <img 
+            src="https://images.acer.com/is/image/acer/browse-popular-categories-laptops?$Product-Catagories-M2-S$" 
+            alt="Laptop"
+            class="w-full h-full object-contain"
+          >
+        </div>
+        <span class="font-medium">Laptop</span>
+      </div>
+
+      <div class="hover:scale-105 transition-transform duration-300">
+        <div class="w-28 h-28 md:w-32 md:h-32 mx-auto mb-4">
+          <img 
+            src="https://images.acer.com/is/image/acer/browse-popular-categories-desktops?$Product-Catagories-M2-S$" 
+            alt="Desktop"
+            class="w-full h-full object-contain"
+          >
+        </div>
+        <span class="font-medium">Desktop</span>
+      </div>
+
+      <div class="hover:scale-105 transition-transform duration-300">
+        <div class="w-28 h-28 md:w-32 md:h-32 mx-auto mb-4">
+          <img 
+            src="https://images.acer.com/is/image/acer/browse-popular-categories-monitors?$Product-Catagories-M2-S$" 
+            alt="Monitor"
+            class="w-full h-full object-contain"
+          >
+        </div>
+        <span class="font-medium">Monitor</span>
+      </div>
+
+      <div class="hover:scale-105 transition-transform duration-300">
+        <div class="w-28 h-28 md:w-32 md:h-32 mx-auto mb-4">
+          <img 
+            src="https://images.acer.com/is/image/acer/browse-popular-categories-projectors?$Product-Catagories-M2-S$" 
+            alt="Proyektor"
+            class="w-full h-full object-contain"
+          >
+        </div>
+        <span class="font-medium">Proyektor</span>
+      </div>
+
+      <div class="hover:scale-105 transition-transform duration-300">
+        <div class="w-28 h-28 md:w-32 md:h-32 mx-auto mb-4">
+          <img 
+            src="https://images.acer.com/is/image/acer/browse-popular-categories-chromebooks?$Product-Catagories-M2-S$" 
+            alt="Chromebook"
+            class="w-full h-full object-contain"
+          >
+        </div>
+        <span class="font-medium">Chromebook</span>
+      </div>
+
+      <div class="hover:scale-105 transition-transform duration-300">
+        <div class="w-28 h-28 md:w-32 md:h-32 mx-auto mb-4">
+          <img 
+            src="https://images.acer.com/is/image/acer/nitro-radeon-rx-7900-gre-an-rx7900gre-oc-01-1?$Product-Catagories-M2-S$" 
+            alt="Kartu Grafis"
+            class="w-full h-full object-contain"
+          >
+        </div>
+        <span class="font-medium">Kartu Grafis</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+    <!-- Produk Unggulan -->
+<section class="py-12">
+  <div class="max-w-7xl mx-auto px-4">
+    <h2 class="text-2xl font-bold mb-8">Produk Unggulan</h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+      <!-- Produk 1 -->
+      <div class="border rounded-lg overflow-hidden hover:shadow-lg transition">
+        <div class="relative w-full h-48 overflow-hidden">
+          <!-- BG Blur -->
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSALjzKJ-eEADh8JaApRPwkAo2S5RkGFlT1_w&s"
+            class="absolute inset-0 w-full h-full object-cover scale-110 blur-xl"
+            alt=""
+          >
+          <div class="absolute inset-0 bg-white/40"></div>
+
+          <!-- Image utama -->
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSALjzKJ-eEADh8JaApRPwkAo2S5RkGFlT1_w&s"
+            alt="Acer Swift Go 14"
+            class="relative z-10 w-full h-full object-contain p-4"
+          >
+        </div>
+
+        <div class="p-4">
+          <span class="text-xs bg-lime-400 text-black px-2 py-1 rounded">BARU</span>
+          <h3 class="font-bold mt-2">Acer Swift Go 14</h3>
+          <p class="text-gray-600 text-sm mt-1">Laptop tipis dan ringan dengan AI</p>
+          <p class="text-lime-600 font-bold mt-2">Rp 15.999.000</p>
+        </div>
+      </div>
+
+      <!-- Produk 2 -->
+      <div class="border rounded-lg overflow-hidden hover:shadow-lg transition">
+        <div class="relative w-full h-48 overflow-hidden">
+          <img
+            src="https://www.jagatreview.com/wp-content/uploads/2024/09/Acer-Predator-Helios-Neo-14-9.png"
+            class="absolute inset-0 w-full h-full object-cover scale-110 blur-xl"
+            alt=""
+          >
+          <div class="absolute inset-0 bg-white/40"></div>
+
+          <img
+            src="https://www.jagatreview.com/wp-content/uploads/2024/09/Acer-Predator-Helios-Neo-14-9.png"
+            alt="Predator Helios 16"
+            class="relative z-10 w-full h-full object-contain p-4"
+          >
+        </div>
+
+        <div class="p-4">
+          <span class="text-xs bg-red-500 text-white px-2 py-1 rounded">GAMING</span>
+          <h3 class="font-bold mt-2">Predator Helios 16</h3>
+          <p class="text-gray-600 text-sm mt-1">Laptop gaming performa tinggi</p>
+          <p class="text-lime-600 font-bold mt-2">Rp 32.999.000</p>
+        </div>
+      </div>
+
+      <!-- Produk 3 -->
+      <div class="border rounded-lg overflow-hidden hover:shadow-lg transition">
+        <div class="relative w-full h-48 overflow-hidden">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTB6HFatRzPc2koA0-76MWRX5lPRCLoxEYW6g&s"
+            class="absolute inset-0 w-full h-full object-cover scale-110 blur-xl"
+            alt=""
+          >
+          <div class="absolute inset-0 bg-white/40"></div>
+
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTB6HFatRzPc2koA0-76MWRX5lPRCLoxEYW6g&s"
+            alt="Acer TravelMate P4"
+            class="relative z-10 w-full h-full object-contain p-4"
+          >
+        </div>
+
+        <div class="p-4">
+          <span class="text-xs bg-blue-500 text-white px-2 py-1 rounded">BISNIS</span>
+          <h3 class="font-bold mt-2">Acer TravelMate P4</h3>
+          <p class="text-gray-600 text-sm mt-1">Laptop bisnis profesional</p>
+          <p class="text-lime-600 font-bold mt-2">Rp 18.499.000</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h4 class="font-bold mb-4">Produk</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="#" class="hover:text-white">Laptop</a></li>
+                        <li><a href="#" class="hover:text-white">Desktop</a></li>
+                        <li><a href="#" class="hover:text-white">Monitor</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Dukungan</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="acer-support.html" class="hover:text-white">Pusat Bantuan</a></li>
+                        <li><a href="#" class="hover:text-white">Garansi</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Tentang Acer</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="acer-id.html" class="hover:text-white">Acer ID</a></li>
+                        <li><a href="acer-emobility.html" class="hover:text-white">eMobility</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Ikuti Kami</h4>
+                    <ul class="mt-12 flex justify-center gap-6 md:gap-8">
+  <!-- Facebook -->
+  <li>
+    <a
+      href="https://facebook.com/username"
+      target="_blank"
+      rel="noreferrer"
+      class="text-white"
+    >
+      <span class="sr-only">Facebook</span>
+      <svg class="size-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+        <path
+          d="M22.675 0h-21.35C.597 0 0 .597 0 1.326v21.348C0 23.403.597 24 1.326 24h11.495v-9.294H9.692V11.01h3.129V8.309c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24h-1.918c-1.504 0-1.796.716-1.796 1.765v2.315h3.587l-.467 3.696h-3.12V24h6.116C23.403 24 24 23.403 24 22.674V1.326C24 .597 23.403 0 22.675 0z"
+        />
+      </svg>
+    </a>
+  </li>
+
+  <!-- Instagram -->
+  <li>
+    <a
+      href="https://instagram.com/username"
+      target="_blank"
+      rel="noreferrer"
+      class="text-white"
+    >
+      <span class="sr-only">Instagram</span>
+      <svg class="size-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+        <path
+          d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.35 3.608 1.325.975.975 1.263 2.242 1.325 3.608.058 1.266.069 1.645.069 4.85s-.011 3.584-.069 4.85c-.062 1.366-.35 2.633-1.325 3.608-.975.975-2.242 1.263-3.608 1.325-1.266.058-1.645.069-4.85.069s-3.584-.011-4.85-.069c-1.366-.062-2.633-.35-3.608-1.325-.975-.975-1.263-2.242-1.325-3.608C2.175 15.584 2.163 15.204 2.163 12s.012-3.584.07-4.85c.062-1.366.35-2.633 1.325-3.608.975-.975 2.242-1.263 3.608-1.325C8.416 2.175 8.796 2.163 12 2.163zm0 3.675a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zm0 10.162a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 11-2.88 0 1.44 1.44 0 012.88 0z"
+        />
+      </svg>
+    </a>
+  </li>
+
+  <!-- Twitter X -->
+  <li>
+    <a
+      href="https://x.com/username"
+      target="_blank"
+      rel="noreferrer"
+      class= "text-white"
+    >
+      <span class="sr-only">Twitter X</span>
+      <svg class="size-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+        <path
+          d="M18.244 2.25h3.308l-7.227 8.26L22.5 21.75h-6.405l-5.014-6.528L5.367 21.75H2.056l7.73-8.835L1.5 2.25h6.568l4.534 5.965L18.244 2.25zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77z"
+        />
+      </svg>
+    </a>
+  </li>
+
+  <!-- YouTube -->
+  <li>
+    <a
+      href="https://youtube.com/@username"
+      target="_blank"
+      rel="noreferrer"
+      class="text-white"
+    >
+      <span class="sr-only">YouTube</span>
+      <svg class="size-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+        <path
+          d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
+        />
+      </svg>
+    </a>
+  </li>
+</ul>
+
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-sm text-gray-500">
+                <p>© 2024 Acer Inc. - Replica untuk tugas sekolah</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
